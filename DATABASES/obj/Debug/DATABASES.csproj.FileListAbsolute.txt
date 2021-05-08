@@ -1,0 +1,11 @@
+C:\Users\georg\source\repos\DATABASES\DATABASES\bin\Debug\DATABASES.exe.config
+C:\Users\georg\source\repos\DATABASES\DATABASES\bin\Debug\DATABASES.exe
+C:\Users\georg\source\repos\DATABASES\DATABASES\bin\Debug\DATABASES.pdb
+C:\Users\georg\source\repos\DATABASES\DATABASES\obj\Debug\DATABASES.csprojAssemblyReference.cache
+C:\Users\georg\source\repos\DATABASES\DATABASES\obj\Debug\DATABASES.Form1.resources
+C:\Users\georg\source\repos\DATABASES\DATABASES\obj\Debug\DATABASES.Properties.Resources.resources
+C:\Users\georg\source\repos\DATABASES\DATABASES\obj\Debug\DATABASES.csproj.GenerateResource.cache
+C:\Users\georg\source\repos\DATABASES\DATABASES\obj\Debug\DATABASES.csproj.CoreCompileInputs.cache
+C:\Users\georg\source\repos\DATABASES\DATABASES\obj\Debug\DATABASES.exe
+C:\Users\georg\source\repos\DATABASES\DATABASES\obj\Debug\DATABASES.pdb
+C:\Users\georg\source\repos\DATABASES\DATABASES\obj\Debug\DATABASES.PL.frmOracle.resources

@@ -32,7 +32,6 @@ namespace DATABASES
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.btnOracle = new System.Windows.Forms.Button();
             this.btnMysql = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
@@ -44,6 +43,7 @@ namespace DATABASES
             this.btnOracle.Size = new System.Drawing.Size(169, 120);
             this.btnOracle.TabIndex = 0;
             this.btnOracle.UseVisualStyleBackColor = true;
+            this.btnOracle.Click += new System.EventHandler(this.btnOracle_Click);
             // 
             // btnMysql
             // 
@@ -53,21 +53,13 @@ namespace DATABASES
             this.btnMysql.Size = new System.Drawing.Size(169, 120);
             this.btnMysql.TabIndex = 0;
             this.btnMysql.UseVisualStyleBackColor = true;
-            // 
-            // button3
-            // 
-            this.button3.Image = global::DATABASES.Properties.Resources.iconfinder_14_940959;
-            this.button3.Location = new System.Drawing.Point(395, 67);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(169, 120);
-            this.button3.TabIndex = 0;
-            this.button3.UseVisualStyleBackColor = true;
+            this.btnMysql.Click += new System.EventHandler(this.btnMysql_Click);
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(213, 19);
+            this.label1.Location = new System.Drawing.Point(130, 20);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(171, 21);
             this.label1.TabIndex = 1;
@@ -78,9 +70,8 @@ namespace DATABASES
             this.AccessibleRole = System.Windows.Forms.AccessibleRole.None;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(610, 225);
+            this.ClientSize = new System.Drawing.Size(419, 211);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.button3);
             this.Controls.Add(this.btnMysql);
             this.Controls.Add(this.btnOracle);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
@@ -95,7 +86,6 @@ namespace DATABASES
 
         private System.Windows.Forms.Button btnOracle;
         private System.Windows.Forms.Button btnMysql;
-        private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Label label1;
     }
 }

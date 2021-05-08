@@ -18,7 +18,7 @@ namespace DATABASES
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new frmOracle());
+            Application.Run(new Form1());
         }
     }
 }

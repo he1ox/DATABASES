@@ -106,6 +106,28 @@ namespace DATABASES.DAL
         }
 
 
+        //Sobrecarga
+        public bool ejecutarComandoSinRetornoDatos(OracleCommand comando)
+        {
+            try
+            {
+                OracleCommand Command=comando;
+
+                comando.Connection = conexion;
+                abrirConexion();
+                comando.ExecuteNonQuery();
+                cerrarConexion();
+
+                return true;
+            }
+            catch
+            {
+                return false;
+            }
+        }
+
+
+
 
         /// <summary>
         /// Hace una prueba de conexion a la BD.

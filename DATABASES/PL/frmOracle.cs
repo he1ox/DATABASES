@@ -10,8 +10,7 @@ using System.Windows.Forms;
 
 using System.Data.OracleClient; //SGBD ORACLE
 using DATABASES.DAL;
-using System.Data;
-
+using DATABASES.BLL;
 
 namespace DATABASES.PL
 {
@@ -37,15 +36,13 @@ namespace DATABASES.PL
         {
             //MessageBox.Show($"Conexion {TestConexion()}");
             MessageBox.Show($"Conexion : {ora.TestConexion()}");
-
-
             //DataTable dt = ora.consultaTablaDirecta("SELECT * FROM tb_alumnos");
 
             //foreach (DataRow dr in dt.Rows)
             //{
             //    listBox1.Items.Add(dr[1].ToString());
             //}
-
+            UpdateGrid();
 
         }
 
@@ -97,7 +94,9 @@ namespace DATABASES.PL
 
         private void btnAgregar_Click(object sender, EventArgs e)
         {
-
+            oAlumnosDal.Agregar(recuperarInfo());
+            dataGridView1.DataSource = oAlumnosDal.MostrarAlumnos().Tables[0];
+            LimpiarEntradas();
         }
 
 
@@ -112,5 +111,38 @@ namespace DATABASES.PL
             dataGridView1.Columns[3].HeaderText = "Parcial Dos";
             dataGridView1.Columns[4].HeaderText = "Parcial Tres";
         }
+
+
+        public void LimpiarEntradas()
+        {
+            txtCorrelativo.Text = "";
+            txtNombre.Text = "";
+            txtParcialUno.Text = "";
+            txtParcialDos.Text = "";
+            txtParcialTres.Text = "";
+        }
+
+        private AlumnosBLL recuperarInfo()
+        {
+            AlumnosBLL oAlumnosBLL = new AlumnosBLL();
+            int correlativo = 0; int.TryParse(txtCorrelativo.Text, out correlativo);
+            int parcialUno = 0; int.TryParse(txtParcialUno.Text, out parcialUno);
+            int parcialDos = 0; int.TryParse(txtParcialDos.Text, out parcialDos);
+            int parcialTres = 0; int.TryParse(txtParcialTres.Text, out parcialTres);
+
+
+            oAlumnosBLL.ID = correlativo;
+            oAlumnosBLL.parcialUno = parcialUno;
+            oAlumnosBLL.parcialDos = parcialDos;
+            oAlumnosBLL.parcialTres = parcialTres;
+
+
+            oAlumnosBLL.nombre = txtNombre.Text;
+
+            return oAlumnosBLL;
+        }
+        
+
+
     }
 }

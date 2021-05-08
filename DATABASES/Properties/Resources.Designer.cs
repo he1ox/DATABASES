@@ -83,6 +83,16 @@ namespace DATABASES.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap iconfinder_Delete_132192 {
+            get {
+                object obj = ResourceManager.GetObject("iconfinder_Delete_132192", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap iconfinder_Download_132283 {
             get {
                 object obj = ResourceManager.GetObject("iconfinder_Download_132283", resourceCulture);
@@ -116,6 +126,16 @@ namespace DATABASES.Properties {
         internal static System.Drawing.Bitmap iconfinder_oracle_294664 {
             get {
                 object obj = ResourceManager.GetObject("iconfinder_oracle_294664", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap iconfinder_Refresh_132187 {
+            get {
+                object obj = ResourceManager.GetObject("iconfinder_Refresh_132187", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
